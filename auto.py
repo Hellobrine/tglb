@@ -11,4 +11,4 @@ def send():
 
 while True:
 	send()
-	time.sleep(180)
+	time.sleep(120)
