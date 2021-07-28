@@ -5,12 +5,12 @@ import time
 api_id = '7971874'
 api_hash = '81d83418ba9b855bcb065ff9620e21f7'
 
-arr = [x for x in os.listdir() if x.endswith(".ogg")]
+arr = [x for x in os.listdir() if x.endswith(".mp3")]
 i = 0
 
 while i < len(arr):
 	with TelegramClient('anon2', api_id, api_hash) as client:
-		client.loop.run_until_complete(client.send_file('alina_thorns', str(arr[i]), voice_note=True))
+		client.loop.run_until_complete(client.send_file('mp3toolsbot', str(arr[i])))
 	i += 1
 	print('otpravil')
 	time.sleep(10)
