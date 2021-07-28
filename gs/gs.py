@@ -1,5 +1,6 @@
 from telethon import TelegramClient
 import os
+import time
 
 api_id = '7971874'
 api_hash = '81d83418ba9b855bcb065ff9620e21f7'
