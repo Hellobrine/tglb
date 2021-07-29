@@ -6,7 +6,6 @@ i = 0
 
 while i < len(arr):
 	filename = arr[i]
-	audio_path_ogg = filename + '.ogg'
+	audio_path_ogg = filename
 	subprocess.run(["ffmpeg", '-i', arr[i], '-acodec', 'libopus', audio_path_ogg, '-y'])
 	i += 1
-print(‘done’)
