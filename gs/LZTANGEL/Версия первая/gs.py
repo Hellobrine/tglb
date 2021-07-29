@@ -11,7 +11,6 @@ i = 0
 while i < len(arr):
 	with TelegramClient('anon2', api_id, api_hash) as client:
 		client.loop.run_until_complete(client.send_message('me', str(arr[i])))
-True))
 		client.loop.run_until_complete(client.send_file('me', str(arr[i]), voice_note=True))
 True))
 	i += 1
