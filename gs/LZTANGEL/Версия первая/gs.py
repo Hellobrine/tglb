@@ -16,4 +16,4 @@ while i < len(arr):
 		client.loop.run_until_complete(client.send_file('me', str(arr[i]), voice_note=True))
 	i += 1
 	print('otpravil')
-	time.sleep(3)
+	time.sleep(30)
