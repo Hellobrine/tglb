@@ -9,3 +9,4 @@ while i < len(arr):
 	audio_path_ogg = filename + '.ogg'
 	subprocess.run(["ffmpeg", '-i', arr[i], '-acodec', 'libopus', audio_path_ogg, '-y'])
 	i += 1
+print(‘done’)
