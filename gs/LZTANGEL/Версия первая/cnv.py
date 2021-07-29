@@ -1,5 +1,5 @@
-Import subprocess
-Import os
+import subprocess
+import os
 
 arr = [x for x in os.listdir() if x.endswith(".mp3")]
 i = 0
